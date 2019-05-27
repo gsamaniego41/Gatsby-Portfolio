@@ -1,3 +1,12 @@
 import React from "react"
 
-export default () => <div>The Great Gatsby Bootcamp</div>
+const Home = () => {
+  return (
+    <div>
+      <h1>Gabriel Samaniego</h1>
+      <h2>Creative Full Stack Developer</h2>
+    </div>
+  )
+}
+
+export default Home
