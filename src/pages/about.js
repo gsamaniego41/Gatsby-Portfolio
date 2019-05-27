@@ -1,6 +1,8 @@
 import React from "react"
 import { Link } from "gatsby"
 
+import Footer from "../components/footer"
+
 const About = () => {
   return (
     <div>
@@ -13,6 +15,8 @@ const About = () => {
           Home
         </Link>
       </p>
+
+      <Footer />
     </div>
   )
 }

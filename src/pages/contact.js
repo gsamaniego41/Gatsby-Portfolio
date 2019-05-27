@@ -1,6 +1,8 @@
 import React from "react"
 import { Link } from "gatsby"
 
+import Footer from "../components/footer"
+
 const Contact = () => {
   return (
     <div>
@@ -25,6 +27,8 @@ const Contact = () => {
         {" | "}
         <Link to="/about">About</Link>
       </p>
+
+      <Footer />
     </div>
   )
 }
