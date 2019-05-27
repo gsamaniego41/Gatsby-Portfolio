@@ -1,11 +1,13 @@
 import React from "react"
 import { Link } from "gatsby"
 
+import NavBar from "../components/nav"
 import Footer from "../components/footer"
 
 const Blog = () => {
   return (
     <div>
+      <NavBar />
       <h1>Blog</h1>
       <p>Posts will show up here</p>
       <p>

@@ -1,11 +1,13 @@
 import React from "react"
 import { Link } from "gatsby"
 
+import NavBar from "../components/nav"
 import Footer from "../components/footer"
 
 const Contact = () => {
   return (
     <div>
+      <NavBar />
       <h1>Contact</h1>
       <p>Email: gsamaniego41@gmail.com</p>
       <p>
