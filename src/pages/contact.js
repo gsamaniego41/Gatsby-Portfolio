@@ -1,13 +1,10 @@
 import React from "react"
-import { Link } from "gatsby"
 
-import NavBar from "../components/nav"
-import Footer from "../components/footer"
+import Layout from "../components/layout"
 
 const Contact = () => {
   return (
-    <div>
-      <NavBar />
+    <Layout>
       <h1>Contact</h1>
       <p>Email: gsamaniego41@gmail.com</p>
       <p>
@@ -20,18 +17,7 @@ const Contact = () => {
           gsamaniego41
         </a>
       </p>
-
-      <p>
-        Back to:{" "}
-        <Link to="/" exact>
-          Home
-        </Link>
-        {" | "}
-        <Link to="/about">About</Link>
-      </p>
-
-      <Footer />
-    </div>
+    </Layout>
   )
 }
 
