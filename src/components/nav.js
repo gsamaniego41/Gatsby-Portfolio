@@ -1,34 +1,29 @@
 import React from "react"
 import { Link } from "gatsby"
 
-const navStyles = {
-  display: "flex",
-  justifyContent: "space-between",
-  width: "100%",
-  maxWidth: "1000px",
-  padding: "15px 0",
-  margin: "0 auto",
-  fontSize: "20px",
-}
-
-const linkStyles = {
-  width: "250px",
-  display: "flex",
-  justifyContent: "space-between",
-}
+import navStyles from "./nav.module.scss"
 
 const NavBar = () => {
   return (
-    <header style={{ borderBottom: "1px solid black" }}>
+    <header>
       <nav>
-        <div style={navStyles}>
+        <div className={navStyles.navbar}>
           <Link to="/" exact>
-            G
+            G/S
           </Link>
-          <div style={linkStyles}>
-            <Link to="/about">About</Link>
-            <Link to="/blog">Blog</Link>
-            <Link to="/contact">Contact</Link>
+          <div className={navStyles.navlinks}>
+            <Link activeClassName={navStyles.active_nav_item} to="/">
+              Home
+            </Link>
+            <Link activeClassName={navStyles.active_nav_item} to="/about">
+              About
+            </Link>
+            <Link activeClassName={navStyles.active_nav_item} to="/blog">
+              Blog
+            </Link>
+            <Link activeClassName={navStyles.active_nav_item} to="/contact">
+              Contact
+            </Link>
           </div>
         </div>
       </nav>
