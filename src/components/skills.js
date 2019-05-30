@@ -2,7 +2,7 @@ import React from "react"
 import { skills } from "../data/skills"
 
 const skillStyles = {
-  border: "1px solid black",
+  background: "#f2f2f2",
   padding: "7px 12px",
   display: "inline-block",
   borderRadius: "2",
@@ -26,7 +26,7 @@ const Skills = () => {
           I code and I design
         </p>
       </div>
-      <div style={{ width: "50%" }}>
+      <div style={{ width: "40%" }}>
         {skills.map(skill => (
           <div style={skillStyles}>{skill}</div>
         ))}
