@@ -16,10 +16,10 @@ const NavBar = () => {
               Home
             </Link>
             <Link activeClassName={navStyles.active_nav_item} to="/about">
-              About
+              Skills
             </Link>
-            <Link activeClassName={navStyles.active_nav_item} to="/blog">
-              Blog
+            <Link activeClassName={navStyles.active_nav_item} to="/projects">
+              Work
             </Link>
             <Link activeClassName={navStyles.active_nav_item} to="/contact">
               Contact
