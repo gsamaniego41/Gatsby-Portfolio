@@ -1,0 +1,14 @@
+@mixin jumbo_title {
+  font-family: $font1;
+  font-size: 7.2rem;
+  font-weight: 800;
+  letter-spacing: 0;
+}
+
+@mixin navlink {
+  // also used for button text
+  text-transform: uppercase;
+  font-family: $font2;
+  font-size: 1.4rem;
+  font-weight: 400;
+}
