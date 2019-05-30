@@ -1,4 +1,9 @@
+// @import 'mixins.scss';
+// @import 'variables.scss';
+// @import 'reset.scss';
 @import "navStyles.scss";
+@import "layoutStyles.scss";
+@import "footerStyles.scss";
 /* Reset provided by https://github.com/gatsbyjs/gatsby-starter-blog via MIT license */
 
 html {
