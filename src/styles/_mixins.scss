@@ -5,12 +5,13 @@
   letter-spacing: 0;
 }
 
-@mixin navlink {
+@mixin navlink_text {
   // also used for button text
   color: #fff;
   font-family: $font2;
   font-size: 1.4rem;
   font-weight: 400;
+  text-decoration: none;
   text-transform: uppercase;
 }
 
