@@ -5,6 +5,9 @@ const skillStyles = {
   border: "1px solid black",
   padding: "7px 12px",
   display: "inline-block",
+  borderRadius: "2",
+  marginRight: "10px",
+  marginBottom: "10px",
 }
 
 const skillsContainer = {
@@ -19,9 +22,11 @@ const Skills = () => {
     <section style={skillsContainer}>
       <div>
         <h2>Skills</h2>
-        <p>I code and I design</p>
+        <p style={{ borderBottom: "1px solid #aaa", padding: "0 0 20px" }}>
+          I code and I design
+        </p>
       </div>
-      <div>
+      <div style={{ width: "50%" }}>
         {skills.map(skill => (
           <div style={skillStyles}>{skill}</div>
         ))}
