@@ -2,6 +2,7 @@ import React from "react"
 import { Link } from "gatsby"
 
 import Layout from "../components/layout"
+import Skills from "../components/skills"
 
 const Home = () => {
   return (
@@ -12,6 +13,7 @@ const Home = () => {
         <p>
           Need a developer? <Link to="/contact">Contact Me.</Link>
         </p>
+        <Skills />
       </Layout>
     </div>
   )
