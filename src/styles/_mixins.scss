@@ -7,8 +7,32 @@
 
 @mixin navlink {
   // also used for button text
-  text-transform: uppercase;
+  color: #fff;
   font-family: $font2;
   font-size: 1.4rem;
   font-weight: 400;
+  text-transform: uppercase;
+}
+
+@mixin btn_primary {
+  border: none;
+  background: $black;
+
+  &:hover {
+    background: #fff;
+    border: 0.5px solid $black;
+    color: $black;
+  }
+}
+
+@mixin btn_secondary {
+  background: #fff;
+  border: 0.5px solid $black;
+  color: $black;
+
+  &:hover {
+    border: none;
+    background: $black;
+    color: #fff;
+  }
 }
