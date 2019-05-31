@@ -1,5 +1,6 @@
 import React from "react"
 import profilePic from "../assets/images/Gabe.jpg"
+import arrow from "../assets/triangle-arrow.png"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 
 const Hero = () => {
@@ -23,6 +24,7 @@ const Hero = () => {
           <FontAwesomeIcon icon="envelope" />
         </div>
       </div>
+      <img src={arrow} alt="arrow" className="hero_arrow_down" />
     </section>
   )
 }
