@@ -1,6 +1,6 @@
 import React from "react"
-import { skills } from "../data/skills"
-import skillsImg from "../assets/images/skills-img.png"
+import { skills } from "../../data/skills"
+import skillsImg from "../../assets/images/skills-img.png"
 
 const Skills = () => {
   return (

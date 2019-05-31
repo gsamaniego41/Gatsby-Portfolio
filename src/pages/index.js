@@ -5,8 +5,8 @@ import { fab } from "@fortawesome/free-brands-svg-icons"
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons"
 
 import Layout from "../components/layout"
-import Hero from "../components/hero"
-import Skills from "../components/skills"
+import Hero from "../components/home/hero"
+import Skills from "../components/home/skills"
 
 library.add(fab, faEnvelope)
 
