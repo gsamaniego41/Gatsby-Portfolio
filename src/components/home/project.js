@@ -3,7 +3,7 @@ import React from "react"
 const HomeProject = ({ id, title, desc, thumb, alt }) => {
   return (
     <li className="homepage_project_item">
-      <div>
+      <div className="homepage_project_summary">
         <h3>
           <span>{id}</span>
           {title}
@@ -15,7 +15,7 @@ const HomeProject = ({ id, title, desc, thumb, alt }) => {
           <button>Story</button>
         </div>
       </div>
-      <img src={thumb} alt={alt} />
+      <img src={thumb} alt={title} />
     </li>
   )
 }
