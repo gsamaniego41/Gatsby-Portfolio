@@ -1,12 +1,12 @@
 import React from "react"
-import { Link } from "gatsby"
+// import { Link } from "gatsby"
 
 import Layout from "../components/layout"
 import Skills from "../components/skills"
 
 const Home = () => {
   return (
-    <div>
+    <>
       <Layout>
         <h1>
           Gabriel
@@ -16,7 +16,7 @@ const Home = () => {
 
         <Skills />
       </Layout>
-    </div>
+    </>
   )
 }
 
