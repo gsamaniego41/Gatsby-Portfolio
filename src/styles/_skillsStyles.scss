@@ -1,12 +1,12 @@
 .skills_container {
   width: 100%;
   display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
+  flex-direction: row;
+  justify-content: space-between;
   margin-bottom: 140px;
 
   .skill_list {
-    width: 50%;
+    width: 95%;
     .skill_item {
       background: $light_grey;
       padding: 12px 15px;
@@ -17,6 +17,12 @@
       font-size: 1.8rem;
       color: $black_mid;
     }
+  }
+
+  img {
+    width: 47%;
+    height: 100%;
+    align-self: center;
   }
 }
 
