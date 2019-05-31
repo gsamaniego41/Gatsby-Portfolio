@@ -2,6 +2,7 @@
   display: flex;
   justify-content: space-between;
   padding: 130px 0;
+  min-height: 800px;
 
   .hero_left {
     h1 {
@@ -30,5 +31,17 @@
         margin-right: 30px;
       }
     }
+  }
+}
+
+@keyframes float {
+  0% {
+    transform: translatey(0px);
+  }
+  50% {
+    transform: translatey(-20px);
+  }
+  100% {
+    transform: translatey(0px);
   }
 }
