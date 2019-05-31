@@ -3,22 +3,32 @@
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
+  margin-bottom: 140px;
 
   .skill_list {
-    width: 40%;
+    width: 50%;
     .skill_item {
       background: $light_grey;
-      padding: 7px 12px;
+      padding: 12px 15px;
       display: inline-block;
-      border-radius: 2px;
-      margin-right: 10px;
-      margin-bottom: 10px;
+      border-radius: 4px;
+      margin-right: 14px;
+      margin-bottom: 14px;
       font-size: 1.8rem;
+      color: $black_mid;
     }
   }
 }
 
 .section_title {
+  &::before {
+    content: "";
+    display: block;
+    width: 80px;
+    height: 1rem;
+    background-color: $black_light;
+    margin-bottom: 40px;
+  }
   h2 {
     color: $green;
     opacity: 0.6;
@@ -26,5 +36,12 @@
     font-size: 4.8rem;
     font-weight: 700;
     text-transform: uppercase;
+    margin-bottom: 5px;
+  }
+  p {
+    font-family: $font2;
+    font-size: 2.4rem;
+    font-weight: 500;
+    margin-bottom: 50px;
   }
 }
