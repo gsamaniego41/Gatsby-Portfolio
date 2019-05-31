@@ -1,0 +1,14 @@
+.project_summary_container {
+  .homepage_project_item {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+
+    .homepage_project_summary {
+      width: 64%;
+    }
+  }
+  img {
+    width: 35%;
+  }
+}
