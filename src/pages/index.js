@@ -2,17 +2,14 @@ import React from "react"
 // import { Link } from "gatsby"
 
 import Layout from "../components/layout"
+import Hero from "../components/hero"
 import Skills from "../components/skills"
 
 const Home = () => {
   return (
     <>
       <Layout>
-        <h1>
-          Gabriel
-          <br /> Samaniego
-        </h1>
-        <h2>Creative Full Stack Developer</h2>
+        <Hero />
 
         <Skills />
       </Layout>
