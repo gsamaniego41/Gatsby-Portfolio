@@ -5,13 +5,26 @@
   min-height: 800px;
 
   .hero_left {
+    max-width: 570px;
+
     h1 {
       @include jumbo_title;
-      line-height: 64px;
+      line-height: 84px;
+
+      &::after {
+        content: "";
+        width: 49%;
+        height: 14px;
+        background-color: $green;
+        margin-top: 10px;
+        display: block;
+      }
     }
 
     h4 {
-      //
+      @include sub_title;
+      margin-top: 30px;
+      max-width: 450px;
     }
   }
 
@@ -20,15 +33,31 @@
     flex-direction: column;
     img {
       border-radius: 5px;
-      width: 275px;
+      width: 290px;
     }
 
     .hero_social_icons {
       font-size: 2.4rem;
-      .fa-linkedin,
-      .fa-github,
-      .fa-envelope {
-        margin-right: 30px;
+
+      a {
+        color: $black;
+
+        .fa-linkedin,
+        .fa-github,
+        .fa-envelope {
+          margin-right: 30px;
+
+          &:hover {
+            color: $green;
+            transition: 0.4s;
+          }
+          &:active {
+            color: rgb(0, 187, 0);
+          }
+          &:visited {
+            color: $black;
+          }
+        }
       }
     }
   }
@@ -38,7 +67,6 @@
     position: absolute;
     bottom: 20px;
     left: 48.6%;
-    // right: 0;
     z-index: 2;
     animation: float 2.3s ease-in-out infinite;
   }
