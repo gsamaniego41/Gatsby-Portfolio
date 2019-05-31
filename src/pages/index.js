@@ -7,6 +7,7 @@ import { faEnvelope } from "@fortawesome/free-solid-svg-icons"
 import Layout from "../components/layout"
 import Hero from "../components/home/hero"
 import Skills from "../components/home/skills"
+import HomeProjectList from "../components/home/projectlist"
 
 library.add(fab, faEnvelope)
 
@@ -15,8 +16,8 @@ const Home = () => {
     <>
       <Layout>
         <Hero />
-
         <Skills />
+        <HomeProjectList />
       </Layout>
     </>
   )
