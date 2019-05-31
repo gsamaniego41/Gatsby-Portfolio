@@ -15,9 +15,20 @@
   }
 
   .hero_right {
+    display: flex;
+    flex-direction: column;
     img {
       border-radius: 5px;
       width: 275px;
+    }
+
+    .hero_social_icons {
+      font-size: 2.4rem;
+      .fa-linkedin,
+      .fa-github,
+      .fa-envelope {
+        margin-right: 30px;
+      }
     }
   }
 }
