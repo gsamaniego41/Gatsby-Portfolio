@@ -1,0 +1,23 @@
+.hero {
+  display: flex;
+  justify-content: space-between;
+  padding: 130px 0;
+
+  .hero_left {
+    h1 {
+      @include jumbo_title;
+      line-height: 64px;
+    }
+
+    h4 {
+      //
+    }
+  }
+
+  .hero_right {
+    img {
+      border-radius: 5px;
+      width: 275px;
+    }
+  }
+}
