@@ -1,11 +1,23 @@
+.nav_black_bg {
+  background-color: $black;
+  width: 50%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 120px;
+  z-index: -1;
+}
+
 .navbar {
+  background-size: 50%;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
+  align-items: center;
   width: 100%;
   max-width: 1000px;
   padding: 15px 0;
   margin: 0 auto;
-  font-size: 20px;
+  height: 120px;
 
   a {
     text-decoration: none;
@@ -18,8 +30,7 @@
   justify-content: space-between;
 
   a {
-    text-decoration: none;
-    color: #999;
+    @include navlink_text;
 
     &:hover {
       color: #666;
@@ -27,6 +38,6 @@
   }
 
   .active_nav_item {
-    color: #333;
+    color: $green;
   }
 }

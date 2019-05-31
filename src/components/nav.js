@@ -6,9 +6,6 @@ const NavBar = () => {
     <header>
       <nav>
         <div className="navbar">
-          <Link to="/" exact>
-            G/S
-          </Link>
           <div className="navlinks">
             <Link activeClassName="active_nav_item" to="/">
               Home
@@ -25,6 +22,7 @@ const NavBar = () => {
           </div>
         </div>
       </nav>
+      <div className="nav_black_bg" />
     </header>
   )
 }
