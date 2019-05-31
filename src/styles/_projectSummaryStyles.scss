@@ -1,11 +1,43 @@
 .project_summary_container {
+  margin-left: 0;
+  margin-top: 80px;
+
   .homepage_project_item {
     display: flex;
     justify-content: space-between;
     list-style: none;
+    border-bottom: 1px solid $black_mid;
+    margin-bottom: 100px;
+    padding-bottom: 60px;
 
     .homepage_project_summary {
-      width: 64%;
+      width: 60%;
+
+      span {
+        color: $green;
+        opacity: 0.6;
+        font-size: 6.4rem;
+        margin-right: 5px;
+      }
+
+      p {
+        @include body_text;
+        // padding: 0 30px;
+        margin-bottom: 40px;
+      }
+
+      .buttons_container {
+        display: flex;
+        width: 70%;
+        max-width: 380px;
+        justify-content: space-between;
+
+        button {
+          color: #fff;
+          padding: 10px 20px;
+          @include btn_primary;
+        }
+      }
     }
   }
   img {

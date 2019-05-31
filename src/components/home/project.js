@@ -5,7 +5,7 @@ const HomeProject = ({ id, title, desc, thumb, alt }) => {
     <li className="homepage_project_item">
       <div className="homepage_project_summary">
         <h3>
-          <span>{id}</span>
+          {/* <span>{id}</span> */}
           {title}
         </h3>
         <p>{desc}</p>
