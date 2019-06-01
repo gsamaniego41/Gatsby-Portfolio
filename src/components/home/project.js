@@ -1,6 +1,6 @@
 import React from "react"
 
-const HomeProject = ({ id, title, desc, thumb, site }) => {
+const HomeProject = ({ id, title, desc, thumb, site, repo }) => {
   return (
     <li className="homepage_project_item">
       <div className="homepage_project_summary">
@@ -10,13 +10,17 @@ const HomeProject = ({ id, title, desc, thumb, site }) => {
           <a href={site} target="_blank" rel="noopener noreferrer">
             <button>Visit Site</button>
           </a>
-          <a href="" target="_blank" rel="noopener noreferrer">
+          <a href={repo} target="_blank" rel="noopener noreferrer">
             <button>View Code</button>
           </a>
           <button>Story</button>
         </div>
       </div>
-      <img src={`${thumb}`} alt={title} />
+      <div className="project_thumbnail">
+        <a href={site} target="_blank" rel="noopener noreferrer">
+          <img src={`${thumb}`} alt={title} />
+        </a>
+      </div>
     </li>
   )
 }

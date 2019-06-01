@@ -19,6 +19,7 @@ const HomeProjectList = () => {
             desc={p.desc}
             thumb={p.thumb}
             site={p.site}
+            repo={p.repo}
           />
         ))}
       </ul>

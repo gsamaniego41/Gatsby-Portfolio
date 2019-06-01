@@ -11,6 +11,7 @@ export const projectSummary = [
       "MyHouse is a real estate valuation tool developed to provide transparency and empowerment to homeowners throughout the lifecycle of home ownership.",
     thumb: myhouseThumb,
     site: "https://myhouse.labs12-real-estate.now.sh/",
+    repo: "https://github.com/labs12-real-estate/labs12-real-estate-FE",
   },
   {
     id: 2,
@@ -19,6 +20,7 @@ export const projectSummary = [
       "MyHouse is a real estate valuation tool developed to provide transparency and empowerment to homeowners throughout the lifecycle of home ownership.",
     thumb: avengersThumb,
     site: "https://avengers-game-vanillajs.netlify.com/",
+    repo: "https://github.com/gsamaniego41/JavaScript-III",
   },
   {
     id: 3,
@@ -27,5 +29,6 @@ export const projectSummary = [
       "MyHouse is a real estate valuation tool developed to provide transparency and empowerment to homeowners throughout the lifecycle of home ownership.",
     thumb: lambdaNotesThumb,
     site: "https://fe-projectweek-lambda-notes.netlify.com/",
+    repo: "https://github.com/gsamaniego41/front-end-project-week",
   },
 ]
