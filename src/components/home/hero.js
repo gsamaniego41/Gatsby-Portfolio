@@ -1,8 +1,8 @@
 import React from "react"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 
-import profilePic from "../../assets/images/Gabe.jpg"
-import arrow from "../../assets/triangle-arrow.png"
+import profilePic from "../../images/Gabe.jpg"
+import arrow from "../../images/triangle-arrow.png"
 
 const Hero = () => {
   return (
