@@ -13,7 +13,8 @@ const HomeProject = ({ id, title, desc, thumb, site, repo }) => {
           <a href={repo} target="_blank" rel="noopener noreferrer">
             <button>View Code</button>
           </a>
-          <button>Story</button>
+          {/* Saving 'Story' btn for later */}
+          {/* <button>Story</button> */}
         </div>
       </div>
       <div className="project_thumbnail">

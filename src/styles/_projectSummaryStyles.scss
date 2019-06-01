@@ -22,13 +22,13 @@
 
       p {
         @include body_text;
-        // padding: 0 30px;
         margin-bottom: 40px;
       }
 
       .buttons_container {
         display: flex;
-        width: 70%;
+        // width: 70%;
+        width: 45%;
         max-width: 380px;
         justify-content: space-between;
 
