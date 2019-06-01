@@ -17,9 +17,9 @@ const HomeProject = ({
         <h3>{title}</h3>
         <p>{desc}</p>
         <div className="project_tech_stack">
-          <span>Tech Stack: </span>
+          <span className="tech_stack">Tech Stack: </span>
           {tech.map(t => (
-            <span>{t}</span>
+            <div className="tech">{t}</div>
           ))}
         </div>
         <div className="buttons_container">
