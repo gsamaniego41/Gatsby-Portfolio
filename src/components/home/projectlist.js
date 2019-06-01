@@ -6,7 +6,7 @@ import HomeProject from "./project"
 const HomeProjectList = () => {
   return (
     <>
-      <div className="section_title">
+      <div className="section_title" id="projects">
         <h2>Projects</h2>
         <p>Some of my proudest work</p>
       </div>

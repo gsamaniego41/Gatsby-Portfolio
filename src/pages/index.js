@@ -14,7 +14,7 @@ library.add(fab, faEnvelope)
 const Home = () => {
   return (
     <>
-      <Layout>
+      <Layout id="home">
         <Hero />
         <Skills />
         <HomeProjectList />

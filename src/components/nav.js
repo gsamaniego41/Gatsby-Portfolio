@@ -7,16 +7,16 @@ const NavBar = () => {
       <nav>
         <div className="navbar">
           <div className="navlinks">
-            <Link activeClassName="active_nav_item" to="/">
+            <Link activeClassName="active_nav_item" to="/#home">
               Home
             </Link>
-            <Link activeClassName="active_nav_item" to="/about">
+            <Link activeClassName="active_nav_item" to="/#skills">
               Skills
             </Link>
-            <Link activeClassName="active_nav_item" to="/projects">
-              Work
+            <Link activeClassName="active_nav_item" to="/#projects">
+              Projects
             </Link>
-            <Link activeClassName="active_nav_item" to="/contact">
+            <Link activeClassName="active_nav_item" to="/#contact">
               Contact
             </Link>
           </div>
