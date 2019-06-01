@@ -12,6 +12,17 @@ export const projectSummary = [
     thumb: myhouseThumb,
     site: "https://myhouse.labs12-real-estate.now.sh/",
     repo: "https://github.com/labs12-real-estate/labs12-real-estate-FE",
+    tech: [
+      "React",
+      "Redux",
+      "node-sass",
+      "AWS Amplify & Cognito",
+      "Amazon S3",
+      "Node",
+      "Express",
+      "Postgres",
+      "GraphQL",
+    ],
   },
   {
     id: 2,
@@ -21,6 +32,7 @@ export const projectSummary = [
     thumb: avengersThumb,
     site: "https://avengers-game-vanillajs.netlify.com/",
     repo: "https://github.com/gsamaniego41/JavaScript-III",
+    tech: ["HTML", "CSS", "Vanilla JavaScript"],
   },
   {
     id: 3,
@@ -31,5 +43,6 @@ export const projectSummary = [
     site: "https://fe-projectweek-lambda-notes.netlify.com/",
     frontend: "https://github.com/gsamaniego41/front-end-project-week",
     backend: "https://github.com/gsamaniego41/back-end-project-week",
+    tech: ["React", "CSS", "SQLite3", "Knex", "Node", "Express"],
   },
 ]
