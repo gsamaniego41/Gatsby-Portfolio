@@ -8,7 +8,7 @@ const Skills = () => {
       <div>
         <div className="section_title">
           <h2>Skills</h2>
-          <p>I code and I design</p>
+          <p>I code and I design.</p>
         </div>
         <div className="skill_list">
           {skills.map(skill => (
