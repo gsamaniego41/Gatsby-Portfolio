@@ -18,6 +18,7 @@ const HomeProjectList = () => {
             title={p.title}
             desc={p.desc}
             thumb={p.thumb}
+            site={p.site}
           />
         ))}
       </ul>
