@@ -15,7 +15,7 @@ const HomeProject = ({ id, title, desc, thumb, alt }) => {
           <button>Story</button>
         </div>
       </div>
-      <img src={thumb} alt={title} />
+      <img src={`${thumb}`} alt={title} />
     </li>
   )
 }
