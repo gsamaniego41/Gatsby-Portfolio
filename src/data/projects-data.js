@@ -29,6 +29,7 @@ export const projectSummary = [
       "MyHouse is a real estate valuation tool developed to provide transparency and empowerment to homeowners throughout the lifecycle of home ownership.",
     thumb: lambdaNotesThumb,
     site: "https://fe-projectweek-lambda-notes.netlify.com/",
-    repo: "https://github.com/gsamaniego41/front-end-project-week",
+    frontend: "https://github.com/gsamaniego41/front-end-project-week",
+    backend: "https://github.com/gsamaniego41/back-end-project-week",
   },
 ]

@@ -27,14 +27,14 @@
 
       .buttons_container {
         display: flex;
-        // width: 70%;
-        width: 45%;
-        max-width: 380px;
-        justify-content: space-between;
+        width: 100%;
+        // width: 45%;
+        // max-width: 380px;
 
         button {
           color: #fff;
           padding: 10px 20px;
+          margin-right: 20px;
           @include btn_primary;
         }
       }

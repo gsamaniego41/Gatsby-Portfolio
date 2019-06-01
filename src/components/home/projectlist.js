@@ -20,6 +20,8 @@ const HomeProjectList = () => {
             thumb={p.thumb}
             site={p.site}
             repo={p.repo}
+            frontend={p.frontend}
+            backend={p.backend}
           />
         ))}
       </ul>
