@@ -22,6 +22,7 @@ const HomeProjectList = () => {
             repo={p.repo}
             frontend={p.frontend}
             backend={p.backend}
+            tech={p.tech}
           />
         ))}
       </ul>

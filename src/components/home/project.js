@@ -9,12 +9,19 @@ const HomeProject = ({
   repo,
   frontend,
   backend,
+  tech,
 }) => {
   return (
     <li className="homepage_project_item">
       <div className="homepage_project_summary">
         <h3>{title}</h3>
         <p>{desc}</p>
+        <div className="project_tech_stack">
+          <span>Tech Stack: </span>
+          {tech.map(t => (
+            <span>{t}</span>
+          ))}
+        </div>
         <div className="buttons_container">
           <a href={site} target="_blank" rel="noopener noreferrer">
             <button>Visit Site</button>
