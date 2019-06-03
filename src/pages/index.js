@@ -8,6 +8,7 @@ import Layout from "../components/layout"
 import Hero from "../components/home/hero"
 import Skills from "../components/home/skills"
 import HomeProjectList from "../components/home/projectlist"
+import Contact from "../components/home/contact"
 
 library.add(fab, faEnvelope)
 
@@ -18,6 +19,7 @@ const Home = () => {
         <Hero />
         <Skills />
         <HomeProjectList />
+        <Contact />
       </Layout>
     </>
   )
