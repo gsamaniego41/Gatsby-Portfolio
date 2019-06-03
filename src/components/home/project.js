@@ -12,16 +12,28 @@ const HomeProject = ({
   tech,
 }) => {
   return (
-    <li className="homepage_project_item">
-      <div className="homepage_project_summary">
-        <h3>{title}</h3>
-        <p>{desc}</p>
-        <div className="project_tech_stack">
-          <span className="tech_stack">Tech Stack: </span>
-          {tech.map(t => (
-            <div className="tech">{t}</div>
-          ))}
+    <>
+      <li className="homepage_project_item">
+        <div className="homepage_project_summary">
+          <div className="project_description">
+            <div>
+              <h3>{title}</h3>
+              <p>{desc}</p>
+            </div>
+            <div className="project_tech_stack">
+              <span className="tech_stack">Tech Stack: </span>
+              {tech.map(t => (
+                <div className="tech">{t}</div>
+              ))}
+            </div>
+          </div>
+          <div className="project_thumbnail">
+            <a href={site} target="_blank" rel="noopener noreferrer">
+              <img src={`${thumb}`} alt={title} />
+            </a>
+          </div>
         </div>
+
         <div className="buttons_container">
           <a href={site} target="_blank" rel="noopener noreferrer">
             <button>Visit Site</button>
@@ -43,13 +55,8 @@ const HomeProject = ({
           {/* Saving 'Story' btn for later */}
           {/* <button>Story</button> */}
         </div>
-      </div>
-      <div className="project_thumbnail">
-        <a href={site} target="_blank" rel="noopener noreferrer">
-          <img src={`${thumb}`} alt={title} />
-        </a>
-      </div>
-    </li>
+      </li>
+    </>
   )
 }
 

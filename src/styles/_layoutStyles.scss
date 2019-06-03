@@ -26,6 +26,7 @@
 
   .content_container {
     margin: 0 auto;
+    width: 95%;
     max-width: 1000px;
 
     @include for-tablet-portrait-down {
