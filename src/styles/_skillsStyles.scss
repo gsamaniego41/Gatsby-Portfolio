@@ -12,6 +12,10 @@
 
   .skills_container {
     width: 55%;
+
+    @include for-tablet-portrait-down {
+      width: 100%;
+    }
   }
 
   .skill_list {
