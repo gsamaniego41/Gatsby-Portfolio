@@ -6,6 +6,12 @@
     height: 1rem;
     background-color: $black_light;
     margin-bottom: 40px;
+
+    @include for-tablet-portrait-down {
+      margin-top: 100px;
+      height: 0.8rem;
+      width: 60px;
+    }
   }
   h2 {
     color: $green;
@@ -15,12 +21,20 @@
     font-weight: 700;
     text-transform: uppercase;
     margin-bottom: 5px;
+
+    @include for-tablet-portrait-down {
+      font-size: 2.8rem;
+    }
   }
   p {
     font-family: $font2;
     font-size: 2.4rem;
     font-weight: 500;
     margin-bottom: 50px;
+
+    @include for-tablet-portrait-down {
+      font-size: 1.8rem;
+    }
   }
 }
 

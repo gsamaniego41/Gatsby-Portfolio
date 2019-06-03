@@ -6,6 +6,7 @@
 
   @include for-tablet-portrait-down {
     padding: 210px 0 110px;
+    min-height: 760px;
   }
 
   .hero_left {
