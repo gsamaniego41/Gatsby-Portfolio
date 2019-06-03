@@ -1,5 +1,6 @@
 import React from "react"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { Link } from "gatsby"
 
 import profilePic from "../../images/Gabe.jpg"
 import arrow from "../../images/triangle-arrow.png"
@@ -25,6 +26,7 @@ const Hero = () => {
             href="https://www.linkedin.com/in/gabriel-samaniego/"
             target="_blank"
             rel="noopener noreferrer"
+            className="social_icon"
           >
             <FontAwesomeIcon icon={["fab", "linkedin"]} />
           </a>
@@ -32,16 +34,13 @@ const Hero = () => {
             href="https://github.com/gsamaniego41"
             target="_blank"
             rel="noopener noreferrer"
+            className="social_icon"
           >
             <FontAwesomeIcon icon={["fab", "github"]} />
           </a>
-          <a
-            href="https://www.linkedin.com/in/gabriel-samaniego/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+          <Link to="/#contact" className="social_icon">
             <FontAwesomeIcon icon="envelope" />
-          </a>
+          </Link>
         </div>
       </div>
       <img src={arrow} alt="arrow" className="hero_arrow_down" />

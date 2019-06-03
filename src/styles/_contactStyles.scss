@@ -1,9 +1,15 @@
 .contact_section {
+  .contact_social_icons {
+    margin-bottom: 20px;
+    a {
+      margin-right: -10px;
+      font-size: 3rem;
+    }
+  }
   form {
     display: flex;
     flex-direction: column;
     width: 60%;
-    // margin: 0 auto 100px;
     margin-bottom: 200px;
 
     input,
@@ -40,6 +46,11 @@
         border: 1px solid $green;
         color: #fff;
       }
+    }
+
+    p {
+      color: $green;
+      font-size: 1.4rem;
     }
   }
 }

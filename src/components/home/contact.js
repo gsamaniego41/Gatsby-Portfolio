@@ -1,4 +1,5 @@
 import React from "react"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 
 const Contact = () => {
   return (
@@ -6,6 +7,24 @@ const Contact = () => {
       <div className="section_title">
         <h2>Contact</h2>
         <p>I am open to opportunities.</p>
+      </div>
+      <div className="contact_social_icons">
+        <a
+          href="https://www.linkedin.com/in/gabriel-samaniego/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="social_icon"
+        >
+          <FontAwesomeIcon icon={["fab", "linkedin"]} />
+        </a>
+        <a
+          href="https://github.com/gsamaniego41"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="social_icon"
+        >
+          <FontAwesomeIcon icon={["fab", "github"]} />
+        </a>
       </div>
       <form name="contact" action="post" netlify>
         <input name="name" type="text" placeholder="Name*" required />
@@ -18,6 +37,7 @@ const Contact = () => {
           placeholder="Message*"
           required
         />
+        <p>Required*</p>
         <button>Send</button>
       </form>
     </div>

@@ -30,7 +30,7 @@
     font-family: $font2;
     font-size: 2.4rem;
     font-weight: 500;
-    margin-bottom: 50px;
+    margin-bottom: 80px;
 
     @include for-tablet-portrait-down {
       font-size: 1.8rem;
@@ -46,5 +46,31 @@ h3 {
 
   @include for-tablet-portrait-down {
     font-size: 3.6rem;
+  }
+}
+
+.social_icon {
+  color: $black;
+
+  .fa-linkedin,
+  .fa-github,
+  .fa-envelope {
+    margin-right: 30px;
+
+    @include for-tablet-portrait-down {
+      margin-right: 24px;
+      font-size: 2rem;
+    }
+
+    &:hover {
+      color: #555;
+      transition: 0.4s;
+    }
+    &:active {
+      color: rgb(0, 187, 0);
+    }
+    &:visited {
+      color: $black;
+    }
   }
 }
