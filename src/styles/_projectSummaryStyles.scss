@@ -1,3 +1,6 @@
+#projects {
+  padding-top: 1px;
+}
 .project_summary_container {
   margin-left: 0;
   margin-top: 80px;
@@ -16,6 +19,10 @@
 
     .homepage_project_summary {
       width: 60%;
+
+      @include for-tablet-portrait-down {
+        width: 55%;
+      }
 
       .project_tech_stack {
         margin-bottom: 60px;
@@ -58,11 +65,20 @@
         // width: 45%;
         // max-width: 380px;
 
+        @include for-tablet-portrait-down {
+          width: 182%;
+        }
+
         button {
           color: #fff;
           padding: 10px 20px;
           margin-right: 15px;
           @include btn_primary;
+
+          @include for-tablet-portrait-down {
+            padding: 8px 20px;
+            font-size: 1.4rem;
+          }
         }
       }
     }
@@ -70,5 +86,10 @@
   .project_thumbnail {
     width: 35%;
     height: 100%;
+
+    @include for-tablet-portrait-down {
+      width: 40%;
+      padding-top: 60px;
+    }
   }
 }

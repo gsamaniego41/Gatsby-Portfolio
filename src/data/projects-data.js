@@ -38,7 +38,8 @@ export const projectSummary = [
   {
     id: 3,
     title: "Lambda Notes",
-    desc: "A full stack note taking CRUD application.",
+    desc:
+      "A full stack CRUD application, Lambda Notes is a culmination of everything I learned from weeks 5 to week 15 in Lambda School.",
     thumb: lambdaNotesThumb,
     site: "https://fe-projectweek-lambda-notes.netlify.com/",
     frontend: "https://github.com/gsamaniego41/front-end-project-week",
