@@ -8,10 +8,16 @@ const Contact = () => {
         <p>I am open to opportunities.</p>
       </div>
       <form name="contact" action="post" netlify>
-        <input name="name" type="text" placeholder="Name" />
-        <input name="company" type="text" placeholder="Company" />
-        <input name="email" type="email" placeholder="Email" />
-        <textarea name="message" cols="30" rows="10" placeholder="Message" />
+        <input name="name" type="text" placeholder="Name*" required />
+        <input name="company" type="text" placeholder="Company (Optional)" />
+        <input name="email" type="email" placeholder="Email*" required />
+        <textarea
+          name="message"
+          cols="30"
+          rows="10"
+          placeholder="Message*"
+          required
+        />
         <button>Send</button>
       </form>
     </div>

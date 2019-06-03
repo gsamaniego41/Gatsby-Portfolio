@@ -1,0 +1,45 @@
+.contact_section {
+  form {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    // margin: 0 auto 100px;
+    margin-bottom: 200px;
+
+    input,
+    textarea {
+      padding: 10px 20px;
+      height: 50px;
+      font-size: 1.8rem;
+      font-family: $font2;
+      border: 1px solid $black_mid;
+      margin-bottom: 20px;
+      border-radius: 2px;
+
+      &:focus {
+        outline: 1px solid $green;
+        border: 1px solid transparent;
+      }
+    }
+
+    textarea {
+      padding: 20px;
+      resize: none;
+      height: auto;
+    }
+
+    button {
+      @include btn_primary;
+      color: #fff;
+      padding: 20px 20px;
+      font-size: 2rem;
+      border-radius: 2px;
+
+      &:hover {
+        background: $green;
+        border: 1px solid $green;
+        color: #fff;
+      }
+    }
+  }
+}
