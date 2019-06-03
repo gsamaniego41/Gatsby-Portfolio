@@ -26,7 +26,8 @@ const Contact = () => {
           <FontAwesomeIcon icon={["fab", "github"]} />
         </a>
       </div>
-      <form name="contact" action="post" netlify>
+      <form name="contact" action="POST" netlify-honeypot="bot-field" netlify>
+        <input name="bot-field" type="text" className="honeypot" />
         <input name="name" type="text" placeholder="Name*" required />
         <input name="company" type="text" placeholder="Company (Optional)" />
         <input name="email" type="email" placeholder="Email*" required />
@@ -38,7 +39,7 @@ const Contact = () => {
           required
         />
         <p>Required*</p>
-        <button>Send</button>
+        <button type="submit">Send</button>
       </form>
     </div>
   )

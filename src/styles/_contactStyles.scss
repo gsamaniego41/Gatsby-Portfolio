@@ -1,4 +1,6 @@
 .contact_section {
+  padding-top: 1px;
+
   .contact_social_icons {
     margin-bottom: 20px;
     a {
@@ -6,11 +8,16 @@
       font-size: 3rem;
     }
   }
+
   form {
     display: flex;
     flex-direction: column;
     width: 60%;
     margin-bottom: 200px;
+
+    @include for-tablet-portrait-down {
+      width: 100%;
+    }
 
     input,
     textarea {
@@ -32,6 +39,10 @@
       padding: 20px;
       resize: none;
       height: auto;
+    }
+
+    .honeypot {
+      display: none;
     }
 
     button {
