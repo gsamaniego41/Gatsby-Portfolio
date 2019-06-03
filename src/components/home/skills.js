@@ -4,8 +4,8 @@ import skillsImg from "../../images/skills-img.png"
 
 const Skills = () => {
   return (
-    <section className="skills_container" id="skills">
-      <div>
+    <section className="skills_section" id="skills">
+      <div className="skills_container">
         <div className="section_title">
           <h2>Skills</h2>
           <p>I code and I design.</p>
