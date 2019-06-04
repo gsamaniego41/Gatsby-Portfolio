@@ -4,6 +4,7 @@ import { library } from "@fortawesome/fontawesome-svg-core"
 import { fab } from "@fortawesome/free-brands-svg-icons"
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons"
 
+import Head from "../components/head"
 import Layout from "../components/layout"
 import Hero from "../components/home/hero"
 import Skills from "../components/home/skills"
@@ -16,6 +17,7 @@ const Home = () => {
   return (
     <>
       <Layout id="home">
+        <Head title="Home" />
         <Hero />
         <Skills />
         <HomeProjectList />
