@@ -18,6 +18,9 @@ const HomeProject = ({
           <div className="project_description">
             <div>
               <h3>{title}</h3>
+              {title === "MyHouse" ? (
+                <h4>Award: First Place at Lambda School Demo Day 2019</h4>
+              ) : null}
               <p>{desc}</p>
             </div>
             <div className="project_tech_stack">
@@ -45,6 +48,19 @@ const HomeProject = ({
               </a>
               <a href={backend} target="_blank" rel="noopener noreferrer">
                 <button>Backend Code</button>
+              </a>
+            </>
+          ) : title === "MyHouse" ? (
+            <>
+              <a href={repo} target="_blank" rel="noopener noreferrer">
+                <button>View Code</button>
+              </a>
+              <a
+                href="https://www.figma.com/file/dntPKGUuPCLJ1RNBCPgep3/MyHouse?node-id=42%3A39"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <button>View Design</button>
               </a>
             </>
           ) : (

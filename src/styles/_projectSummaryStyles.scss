@@ -70,6 +70,11 @@
           @include body_text;
           margin-bottom: 25px;
         }
+
+        h4 {
+          color: $green;
+          font-size: 1.8rem;
+        }
       }
       .buttons_container {
         display: flex;
@@ -89,7 +94,7 @@
       } // end of .buttons_container
     }
     .project_thumbnail {
-      width: 35%;
+      width: 38%;
       height: 100%;
 
       @include for-tablet-portrait-down {
