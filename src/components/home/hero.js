@@ -28,7 +28,10 @@ const Hero = () => {
             rel="noopener noreferrer"
             className="social_icon"
           >
-            <FontAwesomeIcon icon={["fab", "linkedin"]} />
+            <FontAwesomeIcon
+              icon={["fab", "linkedin"]}
+              style={{ maxWidth: "24px" }}
+            />
           </a>
           <a
             href="https://github.com/gsamaniego41"
@@ -36,10 +39,13 @@ const Hero = () => {
             rel="noopener noreferrer"
             className="social_icon"
           >
-            <FontAwesomeIcon icon={["fab", "github"]} />
+            <FontAwesomeIcon
+              icon={["fab", "github"]}
+              style={{ maxWidth: "24px" }}
+            />
           </a>
           <Link to="/#contact" className="social_icon">
-            <FontAwesomeIcon icon="envelope" />
+            <FontAwesomeIcon icon="envelope" style={{ maxWidth: "24px" }} />
           </Link>
         </div>
       </div>
