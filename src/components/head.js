@@ -2,8 +2,8 @@ import React from "react"
 import { Helmet } from "react-helmet"
 import { useStaticQuery, graphql } from "gatsby"
 
-import favicon16 from "../images/favicon16.png"
-import favicon32 from "../images/favicon32.png"
+import favicon16 from "../images/favicon-16x16.png"
+import favicon32 from "../images/favicon-32x32.png"
 
 const Head = ({ title }) => {
   const data = useStaticQuery(graphql`
