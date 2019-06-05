@@ -44,6 +44,17 @@ const Hero = () => {
               style={{ maxWidth: "24px" }}
             />
           </a>
+          <a
+            href="https://twitter.com/gsamaniego41"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="social_icon"
+          >
+            <FontAwesomeIcon
+              icon={["fab", "twitter"]}
+              style={{ maxWidth: "24px" }}
+            />
+          </a>
           <Link to="/#contact" className="social_icon">
             <FontAwesomeIcon icon="envelope" style={{ maxWidth: "24px" }} />
           </Link>

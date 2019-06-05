@@ -25,6 +25,14 @@ const Contact = () => {
         >
           <FontAwesomeIcon icon={["fab", "github"]} />
         </a>
+        <a
+          href="https://twitter.com/gsamaniego41"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="social_icon"
+        >
+          <FontAwesomeIcon icon={["fab", "twitter"]} />
+        </a>
       </div>
       <form
         name="contact"
