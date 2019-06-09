@@ -12,6 +12,10 @@
       height: 0.8rem;
       width: 60px;
     }
+
+    @include for-phone-only {
+      margin-top: 40px;
+    }
   }
   h2 {
     color: $green;

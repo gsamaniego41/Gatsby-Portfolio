@@ -11,7 +11,8 @@
 
   @include for-phone-only {
     flex-direction: column;
-    padding-top: 140px;
+    padding-top: 100px;
+    min-height: 500px;
   }
 
   .hero_left {
@@ -52,6 +53,8 @@
         @include for-phone-only {
           width: 41%;
           height: 8px;
+          margin-top: 20px;
+          margin-bottom: 0px;
         }
       }
     }
@@ -70,7 +73,7 @@
       @include for-phone-only {
         font-size: 1.2rem;
         line-height: 1.6rem;
-        margin-top: 30px;
+        margin-top: 20px;
         width: 100%;
       }
     }
@@ -82,7 +85,7 @@
     width: 30%;
 
     @include for-phone-only {
-      margin-top: 50px;
+      margin-top: 20px;
       width: 50%;
     }
 
@@ -97,6 +100,7 @@
 
       @include for-phone-only {
         margin-bottom: 15px;
+        margin-top: 0px;
       }
     }
 
