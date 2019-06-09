@@ -74,6 +74,7 @@
         font-size: 1.2rem;
         line-height: 1.6rem;
         margin-top: 20px;
+        margin-bottom: 40px;
         width: 100%;
       }
     }
@@ -85,7 +86,7 @@
     width: 30%;
 
     @include for-phone-only {
-      margin-top: 20px;
+      margin-top: 0px;
       width: 50%;
     }
 
