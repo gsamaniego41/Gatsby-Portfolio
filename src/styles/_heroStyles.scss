@@ -9,9 +9,18 @@
     min-height: 760px;
   }
 
+  @include for-phone-only {
+    flex-direction: column;
+    padding-top: 140px;
+  }
+
   .hero_left {
     max-width: 570px;
     width: 65%;
+
+    @include for-phone-only {
+      width: 100%;
+    }
 
     h1 {
       @include jumbo_title;
@@ -20,6 +29,11 @@
       @include for-tablet-portrait-down {
         font-size: 5.8rem;
         line-height: 60px;
+      }
+
+      @include for-phone-only {
+        font-size: 3rem;
+        line-height: 2.8rem;
       }
 
       &::after {
@@ -34,6 +48,11 @@
           height: 12px;
           margin-top: 8px;
         }
+
+        @include for-phone-only {
+          width: 41%;
+          height: 8px;
+        }
       }
     }
 
@@ -46,6 +65,13 @@
         font-size: 2rem;
         line-height: 3rem;
         margin-top: 40px;
+      }
+
+      @include for-phone-only {
+        font-size: 1.2rem;
+        line-height: 1.6rem;
+        margin-top: 30px;
+        width: 100%;
       }
     }
   }
