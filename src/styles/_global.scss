@@ -63,6 +63,11 @@ h3 {
       font-size: 2rem;
     }
 
+    @include for-phone-only {
+      margin-right: 20px;
+      font-size: 1.4rem;
+    }
+
     &:hover {
       color: #555;
       transition: 0.4s;
@@ -72,6 +77,12 @@ h3 {
     }
     &:visited {
       color: $black;
+    }
+  }
+
+  .fa-envelope {
+    @include for-phone-only {
+      margin-right: 0px;
     }
   }
 }

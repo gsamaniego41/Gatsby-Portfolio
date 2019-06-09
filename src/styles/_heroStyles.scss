@@ -81,6 +81,11 @@
     flex-direction: column;
     width: 30%;
 
+    @include for-phone-only {
+      margin-top: 50px;
+      width: 50%;
+    }
+
     img {
       border-radius: 5px;
       width: 290px;
@@ -89,6 +94,10 @@
         width: 100%;
         max-width: 220px;
       }
+
+      @include for-phone-only {
+        margin-bottom: 15px;
+      }
     }
 
     .hero_social_icons {
@@ -96,6 +105,12 @@
 
       @include for-tablet-portrait-down {
         font-size: 1.4rem;
+      }
+
+      @include for-phone-only {
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
       }
     }
   }
