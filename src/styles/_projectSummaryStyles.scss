@@ -82,6 +82,12 @@
             font-size: 1.4rem;
             opacity: 1;
             text-transform: uppercase;
+
+            @include for-phone-only {
+              display: block;
+              margin-bottom: 10px;
+              font-size: 1.2rem;
+            }
           }
           .tech {
             display: inline-block;
@@ -92,6 +98,12 @@
             padding: 4px 8px;
             margin-bottom: 5px;
             margin-right: 5px;
+
+            @include for-phone-only {
+              font-size: 1.2rem;
+              margin-bottom: 10px;
+              margin-right: 10px;
+            }
           }
         }
 
