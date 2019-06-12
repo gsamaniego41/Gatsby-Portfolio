@@ -12,7 +12,9 @@ const Skills = () => {
         </div>
         <div className="skill_list">
           {skills.map(skill => (
-            <div className="skill_item">{skill}</div>
+            <div className="skill_item" key={skill}>
+              {skill}
+            </div>
           ))}
         </div>
       </div>
