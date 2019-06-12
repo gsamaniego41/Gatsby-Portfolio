@@ -28,6 +28,10 @@
       width: 100%;
     }
 
+    @include for-phone-only {
+      margin-bottom: 100px;
+    }
+
     input,
     textarea {
       padding: 10px 20px;
@@ -75,7 +79,6 @@
       color: #fff;
       padding: 20px 20px;
       font-size: 2rem;
-      border-radius: 2px;
 
       @include for-phone-only {
         font-size: 1.4rem;

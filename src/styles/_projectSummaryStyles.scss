@@ -12,6 +12,10 @@
 
     .homepage_project_item:last-of-type {
       border: none;
+
+      @include for-phone-only {
+        margin-bottom: 40px;
+      }
     }
 
     .homepage_project_item {
@@ -31,6 +35,7 @@
 
         @include for-phone-only {
           flex-direction: column-reverse;
+          margin-bottom: 40px;
         }
 
         .project_description {
@@ -128,6 +133,10 @@
         display: flex;
         width: 100%;
 
+        @include for-phone-only {
+          flex-direction: column;
+        }
+
         button {
           color: #fff;
           padding: 10px 20px;
@@ -137,6 +146,12 @@
           @include for-tablet-portrait-down {
             padding: 8px 20px;
             font-size: 1.4rem;
+          }
+
+          @include for-phone-only {
+            margin-bottom: 10px;
+            font-size: 1.2rem;
+            width: 100%;
           }
         }
       } // end of .buttons_container
