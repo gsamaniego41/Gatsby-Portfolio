@@ -95,6 +95,7 @@ h3 {
   }
 
   .fa-envelope {
+    margin-right: 0px;
     @include for-phone-only {
       margin-right: 0px;
     }

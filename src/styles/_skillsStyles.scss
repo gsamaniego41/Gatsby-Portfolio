@@ -20,6 +20,12 @@
     @include for-tablet-portrait-down {
       width: 100%;
     }
+
+    p {
+      @include for-phone-only {
+        margin-bottom: 40px;
+      }
+    }
   }
 
   .skill_list {
