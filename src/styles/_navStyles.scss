@@ -13,6 +13,14 @@
     position: fixed;
     z-index: 2999;
   }
+
+  @include for-phone-only {
+    position: fixed;
+    top: 0;
+    max-width: 375px;
+    right: auto;
+    left: 0;
+  }
 }
 
 .navbar {
@@ -31,6 +39,14 @@
     position: fixed;
     z-index: 3000;
   }
+
+  @include for-phone-only {
+    position: fixed;
+    top: 0;
+    max-width: 375px;
+    padding-right: 0;
+    justify-content: space-evenly;
+  }
 }
 
 .navlinks {
@@ -47,6 +63,10 @@
 
     @include for-tablet-portrait-down {
       font-size: 1.4rem;
+    }
+
+    @include for-phone-only {
+      font-size: 1rem;
     }
 
     &:hover {
