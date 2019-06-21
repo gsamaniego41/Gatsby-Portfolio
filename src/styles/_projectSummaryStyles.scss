@@ -23,9 +23,13 @@
       justify-content: space-between;
       flex-direction: column;
       list-style: none;
-      border-bottom: 1px solid $black_mid;
-      margin-bottom: 100px;
+      border-bottom: 1px solid #ddd;
+      margin-bottom: 80px;
       padding-bottom: 30px;
+
+      @include for-phone-only {
+        margin-bottom: 60px;
+      }
 
       .homepage_project_summary {
         width: 100%;
@@ -71,7 +75,7 @@
           p {
             @include for-phone-only {
               font-size: 1.4rem;
-              line-height: 1.8rem;
+              line-height: 2rem;
               margin-bottom: 40px;
             }
           }
@@ -101,8 +105,8 @@
             background: $light_grey;
             border-radius: 2px;
             padding: 4px 8px;
-            margin-bottom: 5px;
-            margin-right: 5px;
+            margin-bottom: 8px;
+            margin-right: 8px;
 
             @include for-phone-only {
               font-size: 1.2rem;
