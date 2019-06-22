@@ -9,8 +9,8 @@
     }
 
     a {
-      margin-right: -10px;
-      font-size: 3rem;
+      margin-right: -8px;
+      font-size: 2.4rem;
 
       @include for-phone-only {
         margin-right: 5px;
@@ -24,6 +24,10 @@
     width: 60%;
     margin-bottom: 200px;
 
+    @include for-tablet-landscape-up {
+      width: 80%;
+    }
+
     @include for-tablet-portrait-down {
       width: 100%;
     }
@@ -34,17 +38,17 @@
 
     input,
     textarea {
-      padding: 10px 20px;
-      height: 50px;
+      padding: 8px 16px;
+      height: 46px;
       font-size: 1.8rem;
       font-family: $font2;
-      border: 1px solid $black_mid;
+      border: 1px solid #ccc;
       margin-bottom: 20px;
       border-radius: 2px;
 
       @include for-phone-only {
         padding: 10px 14px;
-        height: 38px;
+        height: 40px;
         font-size: 1.2rem;
         margin-bottom: 14px;
       }
@@ -75,10 +79,17 @@
     }
 
     button {
-      @include btn_primary;
+      // @include btn_primary;
+      font-family: $font2;
+      text-transform: uppercase;
       color: #fff;
-      padding: 20px 20px;
+      padding: 16px 20px;
       font-size: 2rem;
+      background-color: $green;
+      border: none;
+      cursor: pointer;
+      border-radius: 2px;
+      transition: 0.3s;
 
       @include for-phone-only {
         font-size: 1.4rem;
@@ -86,9 +97,14 @@
       }
 
       &:hover {
-        background: $green;
-        border: 1px solid $green;
+        opacity: 0.9;
+        // border: 1px solid $green;
         color: #fff;
+      }
+
+      &:active {
+        outline: none;
+        opacity: 0.8;
       }
     }
 
