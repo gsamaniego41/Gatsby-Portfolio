@@ -1,17 +1,21 @@
 .hero {
   display: flex;
   justify-content: space-between;
-  padding: 200px 0 130px 0;
-  min-height: 840px;
+  padding: 160px 0 130px 0;
+  min-height: 760px;
+
+  @include for-tablet-landscape-up {
+    min-height: 700px;
+  }
 
   @include for-tablet-portrait-down {
-    padding: 250px 0 110px;
-    min-height: 760px;
+    padding: 160px 0 110px;
+    min-height: 580px;
   }
 
   @include for-phone-only {
     flex-direction: column;
-    padding-top: 140px;
+    padding-top: 80px;
     min-height: 500px;
   }
 
@@ -127,6 +131,10 @@
     left: 48.6%;
     z-index: 2;
     animation: float 2.3s ease-in-out infinite;
+
+    @include for-tablet-landscape-up {
+      display: none;
+    }
 
     @include for-tablet-portrait-down {
       display: none;
