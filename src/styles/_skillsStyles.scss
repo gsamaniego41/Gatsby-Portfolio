@@ -7,7 +7,7 @@
 
   @include for-tablet-portrait-down {
     flex-direction: column;
-    padding-bottom: 80px;
+    padding-bottom: 60px;
   }
 
   @include for-phone-only {
@@ -62,7 +62,6 @@
     width: 40%;
     height: 100%;
     align-self: flex-end;
-    margin-bottom: -60px;
 
     @include for-tablet-portrait-down {
       width: 100%;

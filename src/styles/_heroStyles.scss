@@ -93,6 +93,7 @@
 
       @include for-phone-only {
         width: 45%;
+        max-width: 180px;
         display: flex;
         justify-content: space-evenly;
       }
