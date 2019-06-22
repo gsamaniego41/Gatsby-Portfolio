@@ -13,8 +13,8 @@ const Layout = props => {
   return (
     <div className="main_container">
       <div className="banner" />
+      <NavBar />
       <div className="content">
-        <NavBar />
         <div className="content_container">{props.children}</div>
       </div>
       <Footer />
