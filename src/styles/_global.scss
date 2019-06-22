@@ -101,3 +101,16 @@ h3 {
     }
   }
 }
+
+#skills,
+#projects,
+#contact {
+  padding-top: 120px;
+
+  @include for-tablet-portrait-down {
+    padding-top: 20px;
+  }
+  @include for-phone-only {
+    padding-top: 80px;
+  }
+}

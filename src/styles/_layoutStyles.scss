@@ -36,8 +36,12 @@
     max-width: 1000px;
 
     @include for-tablet-portrait-down {
-      max-width: 90%;
+      max-width: 80%;
       margin: 0 auto;
+    }
+
+    @include for-phone-only {
+      max-width: 90%;
     }
   }
 }
