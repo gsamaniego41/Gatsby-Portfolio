@@ -18,9 +18,6 @@ const Hero = () => {
           who loves building fully responsive,
           <br /> pixel-perfect web UIs.
         </h4>
-      </div>
-      <div className="hero_right">
-        <img src={profilePic} alt="Gabe" />
         <div className="hero_social_icons">
           <a
             href="https://www.linkedin.com/in/gabriel-samaniego/"
@@ -28,10 +25,7 @@ const Hero = () => {
             rel="noopener noreferrer"
             className="social_icon"
           >
-            <FontAwesomeIcon
-              icon={["fab", "linkedin"]}
-              style={{ maxWidth: "24px" }}
-            />
+            <FontAwesomeIcon icon={["fab", "linkedin"]} />
           </a>
           <a
             href="https://github.com/gsamaniego41"
@@ -39,10 +33,7 @@ const Hero = () => {
             rel="noopener noreferrer"
             className="social_icon"
           >
-            <FontAwesomeIcon
-              icon={["fab", "github"]}
-              style={{ maxWidth: "24px" }}
-            />
+            <FontAwesomeIcon icon={["fab", "github"]} />
           </a>
           <a
             href="https://twitter.com/gsamaniego41"
@@ -50,17 +41,17 @@ const Hero = () => {
             rel="noopener noreferrer"
             className="social_icon"
           >
-            <FontAwesomeIcon
-              icon={["fab", "twitter"]}
-              style={{ maxWidth: "24px" }}
-            />
+            <FontAwesomeIcon icon={["fab", "twitter"]} />
           </a>
           <Link to="/#contact" className="social_icon">
-            <FontAwesomeIcon icon="envelope" style={{ maxWidth: "24px" }} />
+            <FontAwesomeIcon icon="envelope" />
           </Link>
         </div>
+        <img src={arrow} alt="arrow" className="hero_arrow_down" />
       </div>
-      <img src={arrow} alt="arrow" className="hero_arrow_down" />
+      <div className="hero_right">
+        <img src={profilePic} alt="Gabe" />
+      </div>
     </section>
   )
 }

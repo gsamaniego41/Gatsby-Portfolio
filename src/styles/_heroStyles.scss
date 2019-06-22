@@ -1,7 +1,7 @@
 .hero {
   display: flex;
   justify-content: space-between;
-  padding: 160px 0 130px 0;
+  padding: 140px 0 130px 0;
   min-height: 760px;
 
   @include for-tablet-landscape-up {
@@ -9,13 +9,13 @@
   }
 
   @include for-tablet-portrait-down {
-    padding: 160px 0 110px;
+    padding: 120px 0 110px;
     min-height: 580px;
   }
 
   @include for-phone-only {
     flex-direction: column;
-    padding-top: 80px;
+    padding-top: 100px;
     min-height: 500px;
   }
 
@@ -78,66 +78,72 @@
         font-size: 1.2rem;
         line-height: 1.6rem;
         margin-top: 20px;
-        margin-bottom: 40px;
+        margin-bottom: 12px;
         width: 100%;
-      }
-    }
-  }
-
-  .hero_right {
-    display: flex;
-    flex-direction: column;
-    width: 30%;
-
-    @include for-phone-only {
-      margin-top: 0px;
-      width: 50%;
-    }
-
-    img {
-      border-radius: 5px;
-      // width: 290px;
-
-      @include for-tablet-portrait-down {
-        width: 100%;
-        // max-width: 220px;
-      }
-
-      @include for-phone-only {
-        margin-bottom: 15px;
-        margin-top: 0px;
       }
     }
 
     .hero_social_icons {
-      font-size: 2.4rem;
+      padding-top: 10px;
+      font-size: 2.2rem;
 
       @include for-tablet-portrait-down {
         font-size: 1.4rem;
       }
 
       @include for-phone-only {
-        width: 100%;
+        width: 45%;
         display: flex;
         justify-content: space-evenly;
       }
     }
+
+    .hero_arrow_down {
+      display: block;
+      position: absolute;
+      bottom: 20px;
+      left: 48.6%;
+      z-index: 2;
+      animation: float 2.3s ease-in-out infinite;
+
+      @include for-tablet-landscape-up {
+        display: none;
+      }
+
+      @include for-tablet-portrait-down {
+        display: none;
+      }
+    }
+  }
+}
+
+.hero_right {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+
+  @include for-phone-only {
+    margin-top: 0px;
+    width: 50%;
   }
 
-  .hero_arrow_down {
-    display: block;
-    position: absolute;
-    bottom: 20px;
-    left: 48.6%;
-    z-index: 2;
-    animation: float 2.3s ease-in-out infinite;
+  img {
+    border-radius: 5px;
+    padding-top: 20px;
 
     @include for-tablet-landscape-up {
-      display: none;
+      padding-top: 40px;
     }
 
     @include for-tablet-portrait-down {
+      width: 100%;
+      // max-width: 220px;
+    }
+
+    @include for-phone-only {
       display: none;
+      margin-bottom: 15px;
+      margin-top: 0px;
     }
   }
 }
