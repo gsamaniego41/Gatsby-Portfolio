@@ -49,6 +49,8 @@ const Contact = () => {
           cols="30"
           rows="10"
           placeholder="Message*"
+          autoComplete="off"
+          spellCheck="false"
           required
         />
         <p>Required*</p>

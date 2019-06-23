@@ -1,12 +1,14 @@
 .footer {
   width: 100%;
-  background: #111;
+  background: #fff;
+  border-top: 1px solid #ccc;
 
   p {
     max-width: 1000px;
     text-align: center;
     margin: 0 auto;
-    color: #fff;
-    padding: 40px 0;
+    color: $black;
+    padding: 60px 0;
+    font-size: 1.4rem;
   }
 }

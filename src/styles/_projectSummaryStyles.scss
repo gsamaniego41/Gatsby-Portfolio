@@ -33,24 +33,20 @@
         width: 100%;
         display: flex;
         justify-content: space-between;
-        margin-bottom: 80px;
+        margin-bottom: 60px;
 
-        @include for-phone-only {
+        @include for-tablet-portrait-down {
           flex-direction: column-reverse;
           margin-bottom: 40px;
         }
 
         .project_description {
-          width: 60%;
+          width: 55%;
           display: flex;
           flex-direction: column;
           justify-content: space-between;
 
           @include for-tablet-portrait-down {
-            width: 55%;
-          }
-
-          @include for-phone-only {
             width: 100%;
             padding-top: 20px;
           }
@@ -64,7 +60,7 @@
 
           h4 {
             @include for-phone-only {
-              font-size: 1.1rem;
+              font-size: 1.2rem;
               font-weight: 400;
               margin-top: -10px;
             }
@@ -74,14 +70,12 @@
             @include for-phone-only {
               font-size: 1.4rem;
               line-height: 2rem;
-              margin-bottom: 40px;
+              margin-bottom: 60px;
             }
           }
         }
 
         .project_tech_stack {
-          // margin-bottom: 60px;
-
           .tech_stack {
             color: $green;
             font-family: $font1;
@@ -123,7 +117,7 @@
 
         p {
           @include body_text;
-          margin-bottom: 25px;
+          margin-bottom: 60px;
         }
 
         h4 {
@@ -161,14 +155,16 @@
     .project_thumbnail {
       width: 38%;
       height: 100%;
+      padding-top: 40px;
+      transition: 0.3s;
 
-      @include for-tablet-portrait-down {
-        width: 40%;
-        padding-top: 60px;
+      &:hover {
+        opacity: 0.8;
       }
 
-      @include for-phone-only {
+      @include for-tablet-portrait-down {
         padding-top: 0;
+        padding-bottom: 20px;
         width: 100%;
       }
     }
