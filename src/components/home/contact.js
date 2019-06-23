@@ -47,7 +47,7 @@ const Contact = () => {
         <textarea
           name="message"
           cols="30"
-          rows="10"
+          rows="8"
           placeholder="Message*"
           autoComplete="off"
           spellCheck="false"
