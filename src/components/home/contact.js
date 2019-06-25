@@ -42,7 +42,7 @@ const Contact = () => {
       >
         <input name="bot-field" type="text" className="honeypot" />
         <input name="name" type="text" placeholder="Name*" required />
-        <input name="company" type="text" placeholder="Company (Optional)" />
+        {/* <input name="company" type="text" placeholder="Company (Optional)" /> */}
         <input name="email" type="email" placeholder="Email*" required />
         <textarea
           name="message"
